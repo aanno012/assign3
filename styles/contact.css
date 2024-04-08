@@ -83,12 +83,12 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 1fr;
-    margin-left: 23%;
     height: 60vh;
     width: 50vw;
     border: 2px solid rgba(255, 10, 10, 0.186);
     border-radius: 5px;
     padding: 0;   
+    margin-left: 23%;
 }
 
 .container h2 {
@@ -153,18 +153,6 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 50px 1fr 1fr 1fr 1fr;
     }
-
-    audio{
-        display: none;
-    }
-
-    .intro, .intro:hover {
-        border: 0;
-        grid-column: span 2;
-        text-align: center;
-        margin-left: 7%;
-        background-color: white;
-    }
 }
 
 
@@ -177,27 +165,4 @@ footer{
         grid-template-rows: 50px 1fr 1fr;
     }
 
-    audio{
-        display: none;
-    }
-
-    .intro, .intro:hover {
-        border: 0;
-        grid-column: span 2;
-        text-align: center;
-        margin-left: 7%;
-        background-color: white;
-    }
 }
-
-
-/* Large Devices */
-@media only screen and (min-width: 769px){
-    main {
-        display: grid;
-        grid-row: 2;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 1fr 1fr;
-    }
-}
-

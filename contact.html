@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta description="author" content="Augustine Annobil">
+        <meta name="author" content="Augustine Annobil">
         <link rel="stylesheet" href="styles/contact.css">
         <!-- <link rel="stylesheet" href="styles/main.css"> -->
         <!-- <link rel="stylesheet" href="styles/reset.css"> -->
@@ -43,13 +43,14 @@
                         <form
                         action="mailto:aanno012@mtroyal.ca" method="post">
                             <label for="name">Name:
-                            <input type="text" id="name" required></label><br><br>
+                            <input type="text" id="name" placeholder="Surname, Firstname" required></label><br><br>
                             <label for="phone">Phone:
                             <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label><br><br>
                             <label for="email">Email:
-                            <input type="email" id="email" name="email" required placeholder="name@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label><br><br>
-                            <label for="message" id="message">Message:</label><br><br>
-                            <textarea id="message" name="message" placeholder="Type your message here..." required ></textarea></label><br><br>
+                            <input type="email" id="email" name="email" placeholder="name@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label><br><br>
+                            <label for="message" >Message:
+                            <br><br>
+                            <textarea id="message" placeholder="Type your message here..." required ></textarea></label><br><br>
                             <button type="reset" >Reset</button>
                             <button type="Submit" >Submit</button>
                             
