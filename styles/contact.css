@@ -2,6 +2,17 @@
     font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
 }
 
+:root {
+    --headerbg: rgb(245, 245, 186);
+    --ulbg: rgb(99, 99, 32);
+    --li-a-hover: #493d3d;
+    --li-a: white;
+    --banner: rgb(238, 238, 205);
+    --article: rgb(243, 243, 230);
+    --border: rgba(255, 10, 10, 0.362);
+    --footerbg: beige;    
+}
+
 html, body {
     padding:0; 
     margin:0; 
@@ -9,7 +20,6 @@ html, body {
 }
 
 body {
-    /* background-color: var(--back); */
     min-height: calc(100vh - 100px);
     min-width: calc(100vw - 100px);
     letter-spacing: 0.8px;
@@ -24,7 +34,7 @@ header {
     display: grid;
     grid-row: 1;
     height: 15vh;
-    background-color: rgb(245, 245, 186);
+    background-color: var(--headerbg);
     grid-template-rows: 1fr 30px;
 }
 
@@ -35,7 +45,7 @@ header ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(99, 99, 32);
+    background-color: var(--ulbg);
     float: right;
     text-align: center;
     border-radius: 5px;
@@ -43,7 +53,7 @@ header ul {
  
 header li a {
     display: flex;
-    color: white;
+    color: var(--li-a);
     justify-content: center;
     padding: 10px;
     text-decoration: none;
@@ -52,7 +62,7 @@ header li a {
 
   
 header li a:hover {
-    background-color: #493d3d;
+    background-color: var(--li-a-hover)
 }
 
 header img {
@@ -74,9 +84,7 @@ nav {
     display: grid;
     grid-row: 2;
     grid-column: span 2;
-    background-color: rgb(238, 238, 205);
-    
-
+    background-color: var(--banner)
 }
 
 .container {
@@ -85,7 +93,7 @@ nav {
     grid-template-rows: 50px 1fr;
     height: 60vh;
     width: 50vw;
-    border: 2px solid rgba(255, 10, 10, 0.186);
+    border: 2px solid var(--border);
     border-radius: 5px;
     padding: 0;   
     margin-left: 23%;
@@ -110,8 +118,8 @@ input {
 }
 
 button {
-    color: white;
-    background-color: rgb(99, 99, 32);
+    color: var(--li-a);
+    background-color: var(--ulbg);
     text-align: center;
     border-radius: 5px;
     position: relative;
@@ -120,7 +128,7 @@ button {
 }
 
 button:hover {
-    background-color: #493d3d;
+    background-color: var(--li-a-hover);
     cursor: pointer;
 }
 
@@ -134,7 +142,7 @@ footer{
     bottom: 0; 
     left: 0; 
     right: 0;
-    background-color: beige;
+    background-color: var(--footerbg);
     margin: 0;
     padding: 0;
     height: 10vh;
